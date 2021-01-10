@@ -1,0 +1,90 @@
+/* te sfatuiesc sa nu adaugi reguli de stil direct pe body, anumite librarii iti pot crea probleme,
+ poti opta pentru cun child node direct pe body care mai apoi sa contina tot restul continutului din pagina */
+body{
+    /* atentie, in img trebuie sa ajungi din css, navigarea e putin gresita aici, iar la mine imaginea nu se incarca. atasez exemplu */
+    /* background-image: url(/img/background.jpg); */
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header{
+    min-height: 50px
+}
+.menu {
+    font-family: Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-align:center;
+    display:inline;
+    float:right;
+}
+.logo{
+    float:left;
+    margin-top: 0px;
+}
+img{
+    height: 1em;
+}
+.menu.logo{
+    display:inline;
+    font-size:22px;
+}
+/* poti sa selectezi direct toate a-urile, nu ai nevoie de pseudo-class selectors sa mergi prin fiecare in parte */
+.menu a:nth-child(n){
+    margin-right: 40px;
+}
+.margin{
+    margin-top: 65px;
+    margin-left: 50px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+a{
+    color:#fff;
+}
+a:hover{
+    color:#acfdfe;
+}
+a:active{
+    color:cyan;
+}
+.buton{
+    display:inline-block;
+    padding: 5px;
+    background-color: #fff;
+    border-radius:20px;
+    color: blue;
+    width: 80px;
+    text-align: center;
+}
+h1,article{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    font-weight: 550;
+    color:#fff;
+    font-size: 50px;
+    margin-bottom: -40px;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color:#acfdfe;
+    font-size: 48px;
+    letter-spacing: 20px;
+    margin-bottom: 25px;
+}
+.line{
+    width: 250px;
+    border-color:#acfdfe;
+}
+article{
+    margin-top: 50px;
+    margin-left:35%;
+    padding-top:10px;
+    color: #57aeaf; 
+    width: 550px;
+}
