@@ -143,22 +143,32 @@ form div{
     padding-top:20px;
 }
 
+.contact-info {
+    position: relative;
+}
+
+/* este foarte mult duplicat aici selectand separat, si nu este necesar, setul de reguli sunt comune */
 .email i{
     position: absolute;
     left:34.5%;
-    top:31%;
+    /* top:31%; */
+    top: 72px;
 }
 .first-name i{
     position: absolute;
     left:34.5%;
-    top: 8%;
+    /* top: 8%; */
+    top: 72px;
 }
 .last-name i{
     position: absolute;
     left:34.5%;
-    top:19.5%;
+    /* toate top-urile astea voiam sa le evitam, toate sunt diferite, daca introducem aia, trebuie sa modificam tot din nou. mai ok este sa te positionezi fata de contact-info */
+    /* top:19.5%; */
+    top: 72px;
 }
 
+/* era mult mai practic sa pui un width pe form sau pe date-contact si sa te intinzi cu input-urile pe intreg width. Atentie, vei avea nevoie de box-sizing aici */
 .contact-info input{
     width: 30%;
     height: 35px;
@@ -166,6 +176,7 @@ form div{
     padding-left:35px;
 }
 .contact-info label{
+    /* aici hai sa folosim un margin, te rog */
     position:relative;
     right:12.5%;
     font-size: 22px;
@@ -183,6 +194,8 @@ form div{
     margin-bottom:30px;
     margin-top:25px;
 }
+
+/* o abordare mai corecta structural era sa centrezi form-ul cu totul */
 .message label{
     right: 13.5%;
     margin-bottom:15px;
