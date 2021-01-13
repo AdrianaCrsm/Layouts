@@ -128,10 +128,14 @@ img{
 .date-contact{
     background-color: #fff;
     margin-top: 30px;
-    text-align: center;
     font-family: 'Work Sans', sans-serif;
     position:relative;
     font-weight: 300;
+}
+form{
+    width: 35%;
+    margin:auto;
+    box-sizing: border-box;
 }
 .date-contact form{
     display:block;
@@ -147,59 +151,31 @@ form div{
     position: relative;
 }
 
-/* este foarte mult duplicat aici selectand separat, si nu este necesar, setul de reguli sunt comune */
-.email i{
+
+.contact-info i{
     position: absolute;
-    left:34.5%;
-    /* top:31%; */
-    top: 72px;
-}
-.first-name i{
-    position: absolute;
-    left:34.5%;
-    /* top: 8%; */
-    top: 72px;
-}
-.last-name i{
-    position: absolute;
-    left:34.5%;
-    /* toate top-urile astea voiam sa le evitam, toate sunt diferite, daca introducem aia, trebuie sa modificam tot din nou. mai ok este sa te positionezi fata de contact-info */
-    /* top:19.5%; */
-    top: 72px;
+    left:12px;
+    top: 74px;
 }
 
-/* era mult mai practic sa pui un width pe form sau pe date-contact si sa te intinzi cu input-urile pe intreg width. Atentie, vei avea nevoie de box-sizing aici */
 .contact-info input{
-    width: 30%;
-    height: 35px;
+    width: 100%;
+    height: 40px;
     margin-top: 15px;
     padding-left:35px;
+    box-sizing: border-box;
 }
 .contact-info label{
-    /* aici hai sa folosim un margin, te rog */
-    position:relative;
-    right:12.5%;
-    font-size: 22px;
+    font-size:22px;
 }
-.email label{
-    right: 14.5%;
-}
-
 .line-form{
-    width: 33%;
+    width: 100%;
     border-color: #acfdfe;
     margin-top: 55px;
 }
-.message{
-    margin-bottom:30px;
-    margin-top:25px;
-}
-
-/* o abordare mai corecta structural era sa centrezi form-ul cu totul */
-.message label{
-    right: 13.5%;
+#message{
     margin-bottom:15px;
-    margin-top:10px;
+    margin-top:15px;
 }
 
 .enter{
@@ -211,18 +187,20 @@ form div{
 }
 .submit{
     background-color: #a4f3f5;
-    width: 10%;
+    width: 30%;
     height: 50px;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 22px;
 
     margin-right: 15px;
+    margin-left:20%;
     border:0;
 }
 
 .footer{
     margin-top:70px;
+    text-align: center;
 }
 .footer div:first-child{
     font-size: 20px;
@@ -233,4 +211,21 @@ form div{
     padding-top: 0px;
     color:#acfdfe;
     padding-bottom: 15px;
+}
+/*-placeholder-*/
+.Input{
+    color: #12407c;
+    font-family: 'Work Sans', sans-serif;
+}
+.Input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #82b5b6;
+}
+.Input::-moz-placeholder { /* Firefox 19+ */
+    color: #82b5b6;
+}
+.Input:-ms-input-placeholder { /* IE 10+ */
+    color: #82b5b6;
+}
+.Input:-moz-placeholder { /* Firefox 18- */
+    color: #82b5b6;
 }

@@ -8,7 +8,9 @@
     <meta name="keywords" content="Contact">
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="bundles/font-awesome/css/all.css" rel="stylesheet">
@@ -16,50 +18,51 @@
 
 <body>
     <div class="container">
-        <!-- randurile 20-37 te-as sfatui sa le pui intr-un <header> -->
-        <nav class="margin">
-            <div class="menu logo">
-                <img src="img/logo.png" alt="LOGO">
+        
+        <header>
+            <nav class="margin">
+                <div class="menu logo">
+                    <img src="img/logo.png" alt="LOGO">
+                </div>
+                <div class="menu float-right">
+                    <a class="buton">Sign up</a>
+                    <a>About</a>
+                    <a>Services</a>
+                    <a>Contact</a>
+                    <a>Community</a>
+                </div>
+            </nav>
+            <div class="titles-wrapper clear">
+                <h1>CONTACT US</h1>
+                <hr>
+                <span>Fill out from below to learn more.</span>
             </div>
-
-            <div class="menu float-right">
-                <a class="buton">Sign up</a>
-                <a>About</a>
-                <a>Services</a>
-                <a>Contact</a>
-                <a>Community</a>
-            </div>
-        </nav>
-        <div class="titles-wrapper clear">
-            <h1>CONTACT US</h1>
-            <hr>
-            <span>Fill out from below to learn more.</span>
-        </div>
-        <!-- iar partea asta intr-un <main> -->
-        <div class="date-contact">
+        </header>
+        
+        <main class="date-contact">
             <form>
-                <div class="contact-info first-name">
+                <div class="contact-info">
                     <label for="first_name">First name</label>
                     <i class="fas fa-user"></i>
-                    <input name="FirstName" type="text" id="first_name" required placeholder="Enter your first name"/>
+                    <input class="Input" name="FirstName" type="text" id="first_name" required placeholder="Enter your first name" />
                 </div>
-                <div class="contact-info last-name">
+                <div class="contact-info">
                     <label for="last_name">Last name</label>
                     <i class="fas fa-user"></i>
-                    <input name="LastName" type="text" id="last_name" required placeholder="Enter your last name"/>
+                    <input class="Input" name="LastName" type="text" id="last_name" required placeholder="Enter your last name" />
                 </div>
 
-                <div class="contact-info email">
+                <div class="contact-info">
                     <label for="email">Email</label>
                     <i class="fas fa-envelope"></i>
-                    <input name="Email" type="email" id="email" required placeholder="Enter your email"/>
+                    <input class="Input" name="Email" type="email" id="email" required placeholder="Enter your email" />
                 </div>
 
                 <hr class="line-form">
-                
-                <div class="contact-info message"> 
+
+                <div class="contact-info message">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="10" cols="56"></textarea>
+                    <textarea id="message" rows="10" cols="60"></textarea>
                 </div>
 
                 <div>
@@ -68,13 +71,13 @@
                         <span>or press</span>
                         <span>enter</span>
                     </div>
-                </div>  
+                </div>
                 <div class="footer">
                     <div>BLOCKCHAIN</div>
                     <div>TECHNOLOGY</div>
-                </div>  
+                </div>
             </form>
-        </div>
+        </main>
 
     </div>
 </body>
